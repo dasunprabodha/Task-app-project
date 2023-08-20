@@ -15,12 +15,12 @@
         <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
       </a>
 
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Add a Task" aria-label="Add a Task">
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="text">
+        <input #txt type="text" class="form-control form-control-dark text-bg-dark" placeholder="Add a Task" aria-label="Add a Task">
       </form>
 
       <div class="text-end">
-        <button type="button" class="btn btn-warning">Add</button>
+        <button type="button" class="btn btn-primary" (click)="saveTask(txt)" )>Add</button>
       </div>
     </div>
   </div>
