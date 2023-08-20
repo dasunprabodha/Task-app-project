@@ -1,1 +1,8 @@
 @import "bootstrap";
+input:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
+.trash:hover{
+  color: red;
+}
